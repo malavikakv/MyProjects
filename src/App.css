@@ -1,0 +1,67 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('image.png') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Space between the number and buttons */
+}
+.layout {
+  display: flex;
+  flex-direction: row; /* Arrange number and buttons in a row */
+  width: 90%; /* Adjust as needed for layout width */
+  justify-content: flex-start; /* Align buttons to the left */
+  align-items: left;
+  gap: 80px; /* Space between the buttons and the number */
+}
+
+h2 {
+  font-size: 120px; /* Large font size for the number */
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%; /* Adjust the width for button alignment */
+}
+
+button {
+  flex: 1;
+  margin: 0 10px; /* Space between buttons */
+  padding: 30px 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: black;
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
